@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Sands of Time</title>
+		<link rel="icon" href="Images/Icon/Icon.png"></link>
+		<link rel="stylesheet" href="styleSheet.css"></link>
+        <link rel="stylesheet" href="items.css"></link>
+        <meta charset="utf-8"/>
+    </head>
+	<script src="shop.js"></script>
+    <body onload="getOneItem()">
+    <header>
+       <div class="topnav" style="margin-bottom: 20px;">
+            <ul>
+		<li><a href="login.html"><img src="Images/NavBar/Account.png" width="50px"></img></a></li>
+                <li class="drpdwn">
+                <a href="" class="drpbtn"><img src="Images/NavBar/Menu.png" width="50px"></img></a>
+                    <div class="drpdwn-content">
+                        <a href="index.html">Home</a>
+                        <a href="storefront.html">Shop</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="about.html">About</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
+                <li style="float:left;font-size: 48px;"><a href="/index.html">The Sands of Time</a></li>
+            </ul>
+		</div>
+    </header>
+
+    <div class="flex" id="flx">
+        <img class="item-image" id="itemImg"></img>
+
+        <div class="item-info">
+            <h1 id="itemName"></h1>
+            <h2 id="itemPrice"></h2>
+            <p id="itemDesc"></p>
+
+            <form>
+                <label for="quantity">Quantity:</label>
+                <input id="quantity" type="number" value="1" min="0" max="99"/>
+                <br/>
+                <br/>
+                <input class="item-submit" type="submit" value="Add to Cart"/>
+            </form>
+        </div>
+    </div>
+		<img class="item-page-ad" width=600 src="Images/Ads/banner-ad.png"></img>
+<div class="reviews">
+		<h2 class="review-header">Reviews</h2>
+
+        <div class="review">
+		    <h3 class="name">Rebecca Langston</h3>
+		    ★★★★☆
+		    <br/>
+		    Reviewed on August 10, 2020
+		    <br/>
+
+		    <p>I bought this to weigh down an outside cigarette holder. It worked in the bottom of the container just fine. We have had a few storms over the last few days and it has been heavy enough so that the container doesn't turn over.</p>
+        </div>
+
+        <div class="review">
+            <h3 class="name">Jonathan Gonzalez</h3>
+		    ★★★★★
+		    <br/>
+		    Reviewed on October 19, 2020
+		    <br/>
+
+		    <p>Absolutely beautiful. I use it in my art to simulate the beach. It works perfect!</p>
+        </div>
+
+        <div class="review">
+		    <h3 class="name">Jessse White</h3>
+		    ★★★★★
+		    <br/>
+		    Reviewed on January 3, 2021
+		    <br/>
+
+		   <p>I was very happy with this purchase! I used the same to fill 3 glass bottles and then added floral bouquets. The sand was great quality. Very fine sand. </p>
+       </div>
+    </div>
+    <footer>
+        <div class="topnav" style="margin-top: 60px;">
+            <ul>
+				<li><a><img src="Images/Footer/facebooklogo.png"></a></img></li>
+				<li><a><img src="Images/Footer/instagramlogo.png"></a></img></li>
+				<li><a><img src="Images/Footer/twitterlogo.png"></a></img></li>
+            </ul>
+			<ul align="center">
+				The Sands of Time | Established 1942
+			</ul>
+		</div>
+	</footer>
+  </body>
+</html>

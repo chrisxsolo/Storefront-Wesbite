@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>The Sands of Time</title>
+		<link rel="icon" href="Images/Icon/Icon.png"></link>
+		<link rel="stylesheet" href="styleSheet.css"></link>
+        <style>
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 10px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            #form {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 30px;
+                width: 300px;
+                text-align: left;
+                
+
+            }
+            h3 {
+                text-align: center;
+            }
+            button {
+                color: black;
+                padding: 14px 10px;
+                margin: 5px 0;
+                border: none;
+                cursor: pointer;
+                width: 30%;
+                background-color: gainsboro;
+            }
+        </style>
+		<title>The Sands of Time</title>
+		<link rel="icon"></link>
+	</head>
+	<body>
+        <header>
+            <div class="topnav" style="margin-bottom: 20px;">
+                <ul>
+            <li><a href="login.html"><img src="Images/NavBar/Account.png" width="50px"></img></a></li>
+                    <li class="drpdwn">
+                    <a href="" class="drpbtn"><img src="Images/NavBar/Menu.png" width="50px"></img></a>
+                        <div class="drpdwn-content">
+                            <a href="index.html">Home</a>
+                            <a href="storefront.html">Shop</a>
+                            <a href="cart.html">Cart</a>
+                            <a href="about.html">About</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                    </li>
+                    <li style="float:left;font-size: 48px;"><a href="index.html">The Sands of Time</a></li>
+                </ul>
+            </div>	
+            <br>
+        </header>		
+        <h3>Register</h3>
+        <center>
+        <div id="form">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Jacob" required>
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="JohnJacob@gmail.com" required>
+                <label>Verify Email Address</label>
+                <input type="text" id="vename" name="vename" required>
+                <label>Password<i> (7 Character Password)</i></label>
+                <input type="text" id="psswrd" name="psswrd" required>
+                <label>Verify Password</label>
+                <input type="text" id="psswrd" name="psswrd" minlength="8" required>
+                <label for="squest">Security Question:</label>
+                <select name="squest">
+                        <option>What is your mother's maiden name?</option>
+                        <option>What is the last 4 Digits to your SSD?</option>
+                        <option>What is your favorite color?</option>
+                        <option>What is the name of your ELementry School?</option>
+                </select>
+                <h3>Mailing Information</h3>
+                <label for="Address">Address</label>
+                <input type="text" id="Address" name="Address" placeholder="1273 Sassafras St" required>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="San Francisco" required>
+                <label for ="state">State:</label>
+                <select name="state" id="state">
+                    <option value="al">Alabama</option>
+                    <option value="ak">Alaska</option>
+                    <option value="az">Arizona</option>
+                    <option value="ar">Arkansas</option>
+                    <option value="ca">California</option>
+                    <option value="co">Colorado</option>
+                    <option value="ct">Connecticut</option>
+                    <option value="de">Delaware</option>
+                    <option value="fl">Florida</option> 
+                    <option value="ga">Georgia</option>
+                    <option value="hi">Hawaii</option>
+                    <option value="id">Idaho</option>
+                    <option value="il">Illinois</option>
+                    <option value="in">Indiana</option>
+                    <option value="ia">Iowa</option>
+                    <option value="ks">Kansas</option>
+                    <option value="ky">Kentucky</option>
+                    <option value="la">Louisiana</option>
+                    <option value="me">Maine</option>
+                    <option value="md">Maryland</option>
+                    <option value="ma">Massachusetts</option>
+                    <option value="mi">Michigan</option>
+                    <option value="mn">Minnesota</option>
+                    <option value="ms">Mississippi</option>
+                    <option value="mo">Missouri</option>
+                    <option value="mt">Montana</option>
+                    <option value="ne">Nebraska</option>
+                    <option value="nv">Nevada</option>
+                    <option value="nh">New Hampshire</option>
+                    <option value="nj">New Jersey</option>
+                    <option value="nm">New Mexico</option>
+                    <option value="ny">New York</option>
+                    <option value="nc">North Carolina</option>
+                    <option value="nd">North Dakota</option>
+                    <option value="oh">Ohio</option>
+                    <option value="ok">Oklahoma</option>
+                    <option value="or">Oregon</option>
+                    <option value="pa">Pennsylvania</option>
+                    <option value="ri">Rhode Island</option>
+                    <option value="sc">South Carolina</option>
+                    <option value="sd">South Dakota</option>
+                    <option value="tn">Tennessee</option>
+                    <option value="tx">Texas</option>
+                    <option value="ut">Utah</option>
+                    <option value="vt">Vermont</option>
+                    <option value="va">Virginia</option>
+                    <option value="wa">Washington</option>
+                    <option value="wv">West Virginia</option>
+                    <option value="wi">Wisconsin</option>
+                    <option value="wy">Wyoming</option>
+                </select>
+                <h3>Payment Information</h3>
+                <label>Credit Number</label>
+                <input type="text" id="cc" name="cc" minlength="16" required> 
+                <label>Experation Date</label>
+                <input type="text" id="exp" name ="exp"  placeholder="MM/DD" required>
+                <label>CVV</label>
+                <input type="text" id="cvv" name="cvv" minlength="3" required>
+                <button id="cancel">Cancel</button>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        </center>
+        <footer>
+            <div class="topnav" style="margin-top: 60px;">
+                <ul>
+                    <li><a><img src="Images/Footer/facebooklogo.png"></a></img></li>
+                    <li><a><img src="Images/Footer/instagramlogo.png"></a></img></li>
+                    <li><a><img src="Images/Footer/twitterlogo.png"></a></img></li>
+                </ul>
+                <ul align="center">
+                    The Sands of Time | Established 1942
+                </ul>
+            </div>	
+            </footer>
+<script>
+        const button = document.getElementById('submit');
+        button.addEventListener('click', async event => {
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const data = {email, password};
+        const options = {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          };
+          const response = await fetch('/api', options);
+          const json = await response.json();
+          console.log(json); 
+        });
+            </script>
+    </body>
+</html>
+

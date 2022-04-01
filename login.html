@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password] {
+          width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+        h3 {
+            text-align: center;
+        }
+        button {
+            color: black;
+            padding: 14px 10px;
+            margin: 5px 0;
+            border: none;
+            cursor: pointer;
+            width: 22%;
+            background-color: gainsboro;
+        }
+    </style>
+        <title>The Sands of Time</title>
+		<link rel="icon" href="Images/Icon/Icon.png"></link>
+		<link rel="stylesheet" href="styleSheet.css"></link>
+    </head>
+    <body>
+    <header>
+        <div class="topnav" style="margin-bottom: 20px;">
+            <ul>
+		<li><a href="login.html"><img src="Images/NavBar/Account.png" width="50px"></img></a></li>
+                <li class="drpdwn">
+                <a href="" class="drpbtn"><img src="Images/NavBar/Menu.png" width="50px"></img></a>
+                    <div class="drpdwn-content">
+                        <a href="index.html">Home</a>
+                        <a href="storefront.html">Shop</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="about.html">About</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
+                <li style="float:left;font-size: 48px;"><a href="index.html">The Sands of Time</a></li>
+            </ul>
+		</div>	
+    </header>	
+    <br>
+    <h3>Log In</h3>
+    <center>
+      <div id="form">
+        <form>
+          <label for="email">Email</label>
+          <input type="text" id ="email" placeholder="Enter Email..." required>
+          <label for="psswrd">Password</label><br>
+          <input type="password" id="psswrd" required>
+          <button type="cancel" href="index.html">Cancel</button>
+          <button type="login">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label><br>
+      <span class="psw">Forgot <a href="forgotpassword.html">Password?</a></span></br>
+      <span class="signup"><a href="signup.html">Sign Up</a></span>
+    </form>
+    </center>
+</body>
+<footer>
+        <div class="topnav" style="margin-top: 60px;">
+            <ul>
+				<li><a><img src="Images/Footer/facebooklogo.png"></a></img></li>
+				<li><a><img src="Images/Footer/instagramlogo.png"></a></img></li>
+				<li><a><img src="Images/Footer/twitterlogo.png"></a></img></li>
+            </ul>
+			<ul align="center">
+				The Sands of Time | Established 1942
+			</ul>
+		</div>	
+		</footer>
+</html>
